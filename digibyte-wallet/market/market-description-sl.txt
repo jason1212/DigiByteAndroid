@@ -1,0 +1,22 @@
+Nosite svoje novce vedno s seboj v žepu. Plačila so hitra, le prečitate QR-kodo. Tudi prejemanje plačil je zanesljivo in takojšnje. Digibyte Wallet je prva mobilna aplikacija za Digibyte in najbrž tudi najbolj varna!
+
+LASTNOSTI:
+
+• Potrebna ni nobena registracija, spletna storitev ali oblak! Ta denarnica deluje povsem decentralizirano in vrstniško.
+• Prikaz zneskov v DGB, mDGB ali µDGB.
+• Samodejna pretvorba v evre in druge lokalne valute.
+• Pošiljanje in prejemanje Digibyteov prek NFC, QR-kod ali Digibyte URL-jev.
+• Zasebni imenik Digibyte naslovov.
+• Z Digibyteom lahko plačujete tudi, če nimate povezave.
+• Sistemska obvestila ob prejetih novcih.
+• Widget, ki prikazuje stanje v denarnici.
+
+Več o Digibyteu lahko zveste na
+https://Digibyte.org/sl/
+
+Če želite prispevati k aplikaciji Digibyte Wallet, se nam pridružite na
+https://github.com/HashEngineering/digibyte-wallet
+
+Licenca: GPLv3
+Uporaba na lastno odgovornost!
+http://www.gnu.org/licenses/gpl-3.0.en.html

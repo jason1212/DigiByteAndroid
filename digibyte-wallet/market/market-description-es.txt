@@ -1,20 +1,23 @@
-Consiste en una cartera de digibytes para tu dispositivo Android. Puedes enviar digibytes entre teléfonos haciendo explorar los códigos QR que muestra la aplicación o mediante NFC (Near Field Communication).
+Ten tus Digibytes siempre contigo, en tu bolsillo! Paga rápidamente escaneando un código QR. Como comerciante, recibes los pagos de forma fiable e instantáneamente. Digibyte Wallet es la primera Digibyte app para movil, e incluso la mas segura!
 
 CARACTERÍSTICAS:
 
-• Visualización del saldo de la cartera en digibyte y en otras monedas.
-• Envío y recpción de digibytes a través de NFC, códigos QR o URL digibyte.
-• Libreta de direcciones para guardar las direcciones digibyte utilizadas habitualmente.
-• Las transacciones se pueden llevar a cabo sin conexión, ejecutándose al recuperar la conexión.
-• Notificaciones de sistema para la conectividad a la red digibyte y para la recepción de digibytes.
-• Widget de aplicación para el saldo digibyte.
+• ¡No requiere registro, servidor en la nube o servicio web! Este monedero es auténticamente entre pares (peer-to-peer).
+• Muestra la cantidad de Digibytes en DGB y mDGB
+• Conversión a divisas nacionales.
+• Envío y recepción de Digibytes vía NFC, códigos QR o URL de Digibyte.
+• Libreta de direcciones para guardar las direcciones Digibyte más utilizadas.
+• Cuando no tengas conexión, puedes seguir pagando via Bluetooth.
+• Notificación al recibir monedas.
+• Widget para el saldo de Digibytes.
 
-Puedes descubrir más sobre digibyte en
-http://digibyte.co
+Puedes descubrir más sobre Digibyte en
+http://dgbiad.theblockexplorer.com
 
-Si quieres contribuir a digibyte Wallet, el proyecto está localizado en
-https://github.com/digibyte/android/digibyte-wallet
+Si quieres contribuir a Digibyte Wallet, el proyecto se encuentra en
+https://github.com/HashEngineering/digibyte-wallet
+
 
 Licencia: GPLv3
-¡Úsalo bajo tu propia responsabilidad!
+¡Úsalo bajo tu propio riesgo!
 http://www.gnu.org/licenses/gpl-3.0.en.html

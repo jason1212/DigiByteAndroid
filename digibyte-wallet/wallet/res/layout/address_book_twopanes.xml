@@ -9,8 +9,8 @@
 		android:layout_height="match_parent"
 		android:layout_weight="1"
 		android:background="@color/bg_less_bright"
-		android:orientation="vertical" >		
-		
+		android:orientation="vertical" >
+
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -18,10 +18,9 @@
 			android:layout_marginLeft="@dimen/list_entry_padding_horizontal"
 			android:layout_marginRight="@dimen/list_entry_padding_horizontal"
 			android:layout_marginTop="@dimen/list_entry_padding_vertical"
-			android:shadowColor="@color/fg_significant"
+			android:shadowColor="@color/bg_bright"
 			android:shadowRadius="1"
 			android:text="@string/address_book_list_receiving_title"
-			android:textColor="@color/bg_bright"
 			android:textSize="@dimen/font_size_normal"
 			android:textStyle="bold" />
 
@@ -33,9 +32,8 @@
 			android:foreground="@drawable/fragment_shadow_horizontal_light"
 			android:foregroundGravity="top|fill_horizontal" >
 
-			<fragment
+			<FrameLayout
 				android:id="@+id/wallet_addresses_fragment"
-				android:name="de.schildbach.wallet.ui.WalletAddressesFragment"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" />
 		</FrameLayout>
@@ -60,10 +58,9 @@
 			android:layout_marginLeft="@dimen/list_entry_padding_horizontal"
 			android:layout_marginRight="@dimen/list_entry_padding_horizontal"
 			android:layout_marginTop="@dimen/list_entry_padding_vertical"
-			android:shadowColor="@color/fg_significant"
+			android:shadowColor="@color/bg_bright"
 			android:shadowRadius="1"
 			android:text="@string/address_book_list_sending_title"
-			android:textColor="@color/bg_bright"
 			android:textSize="@dimen/font_size_normal"
 			android:textStyle="bold" />
 
@@ -75,9 +72,8 @@
 			android:foreground="@drawable/fragment_shadow_horizontal_light"
 			android:foregroundGravity="top|fill_horizontal" >
 
-			<fragment
+			<FrameLayout
 				android:id="@+id/sending_addresses_fragment"
-				android:name="de.schildbach.wallet.ui.SendingAddressesFragment"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" />
 		</FrameLayout>

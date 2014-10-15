@@ -1,20 +1,20 @@
-digibyte'leriniz daima cebinizde sizinle olsun! Herhangi bir QR kodunu okuyarak çabuk ödeme yapabilirsiniz. Bir tüccar olarak ödemeleri güvenilir ve anında alabilirsiniz. digibyte cüzdanı ilk mobil digibyte uygulamasıdır ve muhtemelen en güvenli digibyte uygulamasıdır!
+Digibyte'leriniz daima cebinizde sizinle olsun! Herhangi bir QR kodunu okuyarak çabuk ödeme yapabilirsiniz. Bir tüccar olarak ödemeleri güvenilir ve anında alabilirsiniz. Digibyte cüzdanı ilk mobil Digibyte uygulamasıdır ve muhtemelen en güvenli Digibyte uygulamasıdır!
 
 İŞLEVLERİ:
 • Hiçbir oturuma, web ya da bulut hizmetine gerek yoktur. Bu cüzdan merkezsiz ve eşten eşedir.
-• digibyte meblağlarının BTC ve mBTC olarak gösterilmesi.
-• Dövizlere ve dövizlerden dönüştürme.
-• NFC, QR kodu veya digibyte bağlantıları ile digibyte gönderir ve alır.
-• Sık kullanılan digibyte adresleri için adres defteri içerir.
+• Digibyte meblağlarının DGB ve mDGB olarak gösterilmesi.
+• Ulusal para birimlerine ve bu para birimlerinden dönüştürme.
+• NFC, QR kodu veya Digibyte bağlantıları ile Digibyte gönderir ve alır.
+• Sık kullanılan Digibyte adresleri için adres defteri içerir.
 • Çevrimdışı olduğunuzda Bluetooth vasıtasıyla ödemeler.
-• Alınan digibyte'ler için sistem bildirimleri.
-• digibyte bakiyesini görüntüleyen widget.
+• Alınan Digibyte'ler için sistem bildirimleri.
+• Digibyte bakiyesini görüntüleyen widget.
 
-digibyte hakkında daha fazla bilgi için şu siteyi ziyaret edebilirsiniz:
-http://digibyte.co
+Digibyte hakkında daha fazla bilgi için şu siteyi ziyaret edebilirsiniz:
+http://dgbiad.theblockexplorer.com
 
-digibyte Wallet uygulamasına katkıda bulunmak istiyorsanız proje sayfasını ziyaret ediniz:
-https://github.com/digibyte/android/digibyte-wallet
+Digibyte Wallet uygulamasına katkıda bulunmak istiyorsanız proje sayfasını ziyaret ediniz:
+https://github.com/HashEngineering/digibyte-wallet
 
 Lisans: GPLv3
 Tüm riski siz üstlenmiş olursunuz.

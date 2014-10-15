@@ -2,11 +2,11 @@
 <!-- Need to update this for the coin -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-
 	package="de.schildbach.wallet.digibyte"
 	android:installLocation="internalOnly"
-	android:versionCode="10023"
-	android:versionName="1.0.1.2" >
+
+	android:versionCode="10022"
+	android:versionName="2.0.0" >
 
 
 	<uses-sdk
@@ -80,7 +80,7 @@
 			<intent-filter>
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:mimeType="application/x-dgctx" />
+				<data android:mimeType="application/x-dgbtx" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -95,7 +95,7 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:scheme="bitcoin" />
+				<data android:scheme="digibyte" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -103,7 +103,21 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:scheme="bitcoin" />
+				<data android:scheme="digibyte" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter android:label="@string/send_coins_activity_title">
+				<action android:name="android.intent.action.VIEW" />
+
+				<data android:mimeType="application/digibyte-paymentrequest" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter android:label="@string/send_coins_activity_title" >
+				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+				<data android:mimeType="application/digibyte-paymentrequest" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -119,6 +133,20 @@
 			android:label="@string/request_coins_activity_title"
 			android:screenOrientation="behind"
 			android:windowSoftInputMode="adjustResize" />
+		<activity
+                android:name="de.schildbach.wallet.ui.TransactionActivity"
+                android:configChanges="keyboard|keyboardHidden"
+                android:label="@string/transaction_activity_title"
+                android:screenOrientation="behind" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="ltctx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
 		<activity
 			android:name="de.schildbach.wallet.ui.AddressBookActivity"
 			android:configChanges="keyboard|keyboardHidden"
@@ -151,7 +179,7 @@
 
 				<category android:name="android.intent.category.DEFAULT" />
 
-				<data android:mimeType="x-bitcoin/private-keys" />
+				<data android:mimeType="x-digibyte/private-keys" />
 				<data android:mimeType="application/octet-stream" />
 			</intent-filter>
 		</activity>
@@ -175,7 +203,7 @@
 
 		<receiver
 			android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
-			android:label="DigiByte Wallet Balance" >
+			android:label="Digibyte Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
