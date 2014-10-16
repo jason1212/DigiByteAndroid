@@ -1,19 +1,19 @@
-Detta är en fristående digibyte plånbok för Android. Du kan skicka digibytes mellan telefoner genom att scanna den QR kod som visas på skärmen. Eller använda NFC (Near Field Communication).
+Detta är en fristående Digibyte plånbok för Android. Du kan skicka Digibytes mellan telefoner genom att scanna den QR kod som visas på skärmen. Eller använda NFC (Near Field Communication).
 
 FUNKTIONER:
 
-• Visa plånbokens värde i digibytes och andra valutor.
-• Skicka och ta emot digibytes via NFC, QR-koder eller en digibyte URL.
-• Adressbok för de digibyte adresser man använder ofta.
+• Visa plånbokens värde i Digibytes och andra valutor.
+• Skicka och ta emot Digibytes via NFC, QR-koder eller en Digibyte URL.
+• Adressbok för de Digibyte adresser man använder ofta.
 • Påbörja transaktioner medan du är offline, de utförs när du kommer online.
-• Systemnotifikationer när digibytes skickats till dig, och när plånboken kommunicerar med nätverket.
+• Systemnotifikationer när Digibytes skickats till dig, och när plånboken kommunicerar med nätverket.
 • App widget som visar plånbokens värde.
 
-Du kan lära dig mer om digibyte genom att besöka
-http://digibyte.co
+Du kan lära dig mer om Digibyte genom att besöka
+http://dgbiad.theblockexplorer.com
 
-Om du vill hjälpa till med utvecklingen av digibyte Wallet så kan du hitta projektet här
-https://github.com/digibyte/android/digibyte-wallet
+Om du vill hjälpa till med utvecklingen av Digibyte Wallet så kan du hitta projektet här
+https://github.com/HashEngineering/digibyte-wallet
 
 Licens: GPLv3
 Använd på egen risk!

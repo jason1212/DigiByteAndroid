@@ -1,20 +1,20 @@
-Dengan aplikasi ini Anda selalu mempunyai digibyte dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). digibyte Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
+Dengan aplikasi ini Anda selalu mempunyai Digibyte dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). Digibyte Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
 
 FITUR:
 
 • Tidak diperlukan server awan atau layanan web! Dompet ini benar-benar peer ke peer.
-• Tampilkan saldo dompet dalam digibyte dan mata uang lainnya.
-• Mengirim dan menerima digibyte via NFC, kode-QR atau Tautan digibyte.
-• Buku alamat untuk alamat penggunaan digibyte secara reguler.
+• Tampilkan saldo dompet dalam Digibyte dan mata uang lainnya.
+• Mengirim dan menerima Digibyte via NFC, kode-QR atau Tautan Digibyte.
+• Buku alamat untuk alamat penggunaan Digibyte secara reguler.
 • Masukkan transaksi saat offline, akan dilaksanakan ketika online.
-• Notifikasi sistem untuk konektivitas digibyte dan menerima koin.
-• Widget Apl untuk saldo digibyte.
+• Notifikasi sistem untuk konektivitas Digibyte dan menerima koin.
+• Widget Apl untuk saldo Digibyte.
 
-Anda dapat mengetahui lebih mengenai digibyte di
-http://digibyte.co
+Anda dapat mengetahui lebih mengenai Digibyte di
+http://dgbiad.theblockexplorer.com
 
-Jika Anda ingin berkontribusi kepada digibyte Wallet, proyeknya berada di
-https://github.com/digibyte/android/digibyte-wallet
+Jika Anda ingin berkontribusi kepada Digibyte Wallet, proyeknya berada di
+https://github.com/HashEngineering/digibyte-wallet
 
 Lisensi: GPLv3
 Gunakan dengan resiko Anda!

@@ -1,19 +1,19 @@
-Dit is een standalone digibyte Wallet voor uw Android apparaat. U kan direct digibytes versturen tussen telefoons door simpelweg de QR-code te scannen die de app weergeeft of via NFC (Near Field Communication).
+Dit is een standalone Digibyte Wallet voor uw Android apparaat. U kan direct Digibytes versturen tussen telefoons door simpelweg de QR-code te scannen die de app weergeeft of via NFC (Near Field Communication).
 
 FUNCTIES:
 
-• Weergeven van het wallet saldo in digibyte en verschillende andere valuta.
-• Verzenden en ontvangen van digibyte via NFC, QR-codes of digibyte URLs.
-• Adresboek voor veelgebruikte digibyte adressen.
+• Weergeven van het wallet saldo in Digibyte en verschillende andere valuta.
+• Verzenden en ontvangen van Digibyte via NFC, QR-codes of Digibyte URLs.
+• Adresboek voor veelgebruikte Digibyte adressen.
 • Transacties ingeven tijdens het offline zijn, deze zullen worden uitgevoerd wanneer u online komt.
-• Systeem melding over digibyte connectiviteit en ontvangen digibytes.
-• Widget voor digibyte saldo.
+• Systeem melding over Digibyte connectiviteit en ontvangen Digibytes.
+• Widget voor Digibyte saldo.
 
-Voor meer informatie over digibyte kunt u terecht op
-http://digibyte.co
+Voor meer informatie over Digibyte kunt u terecht op
+http://dgbiad.theblockexplorer.com
 
-Als u een bijdrage wil leveren aan digibyte Wallet, het project is te vinden op
-https://github.com/digibyte/android/digibyte-wallet
+Als u een bijdrage wil leveren aan Digibyte Wallet, het project is te vinden op
+https://github.com/HashEngineering/digibyte-wallet
 
 Licentie: GPLv3
 Gebruik op eigen risico!

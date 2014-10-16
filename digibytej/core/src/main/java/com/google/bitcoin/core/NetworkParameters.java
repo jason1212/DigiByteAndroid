@@ -57,6 +57,11 @@ public abstract class NetworkParameters implements Serializable {
     /** Unit test network. */
     public static final String ID_UNITTESTNET = CoinDefinition.ID_UNITTESTNET; //"com.google.bitcoin.unittest";
 
+    /** The string used by the payment protocol to represent the main net. */
+    public static final String PAYMENT_PROTOCOL_ID_MAINNET = "main";
+    /** The string used by the payment protocol to represent the test net. */
+    public static final String PAYMENT_PROTOCOL_ID_TESTNET = "test";
+
     // TODO: Seed nodes should be here as well.
 
     protected Block genesisBlock;
@@ -98,12 +103,12 @@ public abstract class NetworkParameters implements Serializable {
             // A script containing the difficulty bits and the following message:
             //
             //   coin dependent
-            byte[] bytes = Hex.decode(CoinDefinition.genesisXInBytes);
-            //byte[] bytes = Hex.decode("04ffff001d0104294469676974616c636f696e2c20412043757272656e637920666f722061204469676974616c20416765");
+            byte[] bytes = Hex.decode(CoinDefinition.genesisTXInBytes);
+
             t.addInput(new TransactionInput(n, t, bytes));
             ByteArrayOutputStream scriptPubKeyBytes = new ByteArrayOutputStream();
-            Script.writeBytes(scriptPubKeyBytes, Hex.decode(CoinDefinition.genessiXOutBytes));
-                    //("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f"));
+            Script.writeBytes(scriptPubKeyBytes, Hex.decode(CoinDefinition.genesisTXOutBytes));
+
             scriptPubKeyBytes.write(ScriptOpCodes.OP_CHECKSIG);
             t.addOutput(new TransactionOutput(n, t, Utils.toNanoCoins(CoinDefinition.genesisBlockValue, 0), scriptPubKeyBytes.toByteArray()));
         } catch (Exception e) {
@@ -152,7 +157,7 @@ public abstract class NetworkParameters implements Serializable {
     /**
      * The maximum money to be generated
      */
-    public static final BigInteger MAX_MONEY = new BigInteger(CoinDefinition.MAX_MONEY_STRING, 10).multiply(COIN);
+    public static final BigInteger MAX_MONEY = CoinDefinition.MAX_MONEY;
 
     /** Alias for TestNet3Params.get(), use that instead. */
     @Deprecated
@@ -197,6 +202,8 @@ public abstract class NetworkParameters implements Serializable {
         return id;
     }
 
+    public abstract String getPaymentProtocolId();
+
     @Override
     public boolean equals(Object other) {
         if (!(other instanceof NetworkParameters)) return false;
@@ -218,6 +225,18 @@ public abstract class NetworkParameters implements Serializable {
             return TestNet3Params.get();
         } else if (id.equals(ID_UNITTESTNET)) {
             return UnitTestParams.get();
+        } else {
+            return null;
+        }
+    }
+
+    /** Returns the network parameters for the given string paymentProtocolID or NULL if not recognized. */
+    @Nullable
+    public static NetworkParameters fromPmtProtocolID(String pmtProtocolId) {
+        if (pmtProtocolId.equals(PAYMENT_PROTOCOL_ID_MAINNET)) {
+            return MainNetParams.get();
+        } else if (pmtProtocolId.equals(PAYMENT_PROTOCOL_ID_TESTNET)) {
+            return TestNet3Params.get();
         } else {
             return null;
         }

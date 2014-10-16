@@ -53,7 +53,7 @@ public class IrcDiscovery implements PeerDiscovery {
      *                respectively.
      */
     public IrcDiscovery(String channel) {
-        this("#digibyte00", "irc.lfnet.org", 6667);
+        this(channel, "irc.lfnet.org", 6667);
     }
 
     /**
@@ -128,7 +128,6 @@ public class IrcDiscovery implements PeerDiscovery {
             // USER <user> <mode> <unused> <realname> (RFC 2812)
             command = "USER " + nickRnd + " 8 *: " + nickRnd;
             logAndSend(command);
-            log.info("Connecting to IRC with username " + command);
             writer.flush();
 
             // Wait to be logged in. Worst case we end up blocked until the server PING/PONGs us out.
@@ -137,7 +136,7 @@ public class IrcDiscovery implements PeerDiscovery {
                 onIRCReceive(currLine);
                 // 004 tells us we are connected
                 // TODO: add common exception conditions (nick already in use, etc..)
-                // these aren't bullet proof checks but they should do for our purposes.                
+                // these aren't bullet proof checks but they should do for our purposes.
                 if (checkLineStatus("004", currLine)) {
                     break;
                 }
@@ -152,9 +151,7 @@ public class IrcDiscovery implements PeerDiscovery {
             // A list of the users should be returned. Look for code 353 and parse until code 366.
             while ((currLine = reader.readLine()) != null) {
                 onIRCReceive(currLine);
-                log.info("Line Revicied" + currLine);
                 if (checkLineStatus("353", currLine)) {
-                	  log.info("Line contains users" + currLine);
                     // Line contains users. List follows ":" (second ":" if line starts with ":")
                     int subIndex = 0;
                     if (currLine.startsWith(":")) {
@@ -163,7 +160,6 @@ public class IrcDiscovery implements PeerDiscovery {
 
                     String spacedList = currLine.substring(currLine.indexOf(":", subIndex));
                     addresses.addAll(parseUserList(spacedList.substring(1).split(" ")));
-                    log.info("Address added" + parseUserList(spacedList.substring(1).split(" ")));
                 } else if (checkLineStatus("366", currLine)) {
                     // End of user list.
                     break;
