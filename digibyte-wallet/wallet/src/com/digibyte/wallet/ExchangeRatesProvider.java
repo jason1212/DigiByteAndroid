@@ -317,7 +317,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 // Fix things like 3,1250
                 //euros = euros.replace(",", ".");
                 //rates.put(currencyCryptsy, new ExchangeRate(currencyCryptsy, Utils.toNanoCoins(euros), URLCryptsy.getHost()));
-                if(currencyCryptsy.equalsIgnoreCase("BTC")) btcRate = averageTrade;
+                if(currencyCryptsy.equalsIgnoreCase("bDGB")) btcRate = averageTrade;
 
             }
             finally
@@ -374,7 +374,7 @@ public class ExchangeRatesProvider extends ContentProvider
                     Double averageTrade = head.getDouble("avg");
 
 
-                    if(currency.equalsIgnoreCase("BTC"))
+                    if(currency.equalsIgnoreCase("bDGB"))
                         btcRate = averageTrade;
                 }
                 return btcRate;

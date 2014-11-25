@@ -131,7 +131,7 @@ public final class TransactionFragment extends SherlockFragment
 			if (amountSent.signum() != 0)
 			{
 				final TextView viewAmountSent = (TextView) view.findViewById(R.id.transaction_fragment_amount_sent);
-				viewAmountSent.setText(Constants.CURRENCY_MINUS_SIGN + GenericUtils.formatValue(amountSent, Constants.BTC_MAX_PRECISION, 0));
+				viewAmountSent.setText(Constants.CURRENCY_MINUS_SIGN + GenericUtils.formatValue(amountSent, Constants.bDGB_MAX_PRECISION, 0));
 			}
 		}
 		catch (final ScriptException x)
@@ -144,7 +144,7 @@ public final class TransactionFragment extends SherlockFragment
 		if (amountReceived.signum() != 0)
 		{
 			final TextView viewAmountReceived = (TextView) view.findViewById(R.id.transaction_fragment_amount_received);
-			viewAmountReceived.setText(Constants.CURRENCY_PLUS_SIGN + GenericUtils.formatValue(amountReceived, Constants.BTC_MAX_PRECISION, 0));
+			viewAmountReceived.setText(Constants.CURRENCY_PLUS_SIGN + GenericUtils.formatValue(amountReceived, Constants.bDGB_MAX_PRECISION, 0));
 		}
 
 		final View viewFromButton = view.findViewById(R.id.transaction_fragment_from_button);

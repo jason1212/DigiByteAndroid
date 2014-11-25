@@ -130,7 +130,7 @@ public class GenericUtils
 
 	public static String formatDebugValue(@Nonnull final BigInteger value)
 	{
-		return formatValue(value, Constants.BTC_MAX_PRECISION, 0);
+		return formatValue(value, Constants.bDGB_MAX_PRECISION, 0);
 	}
 
 	public static BigInteger toNanoCoins(final String value, final int shift) throws ArithmeticException

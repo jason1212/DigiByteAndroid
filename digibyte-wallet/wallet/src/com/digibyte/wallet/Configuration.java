@@ -88,7 +88,7 @@ public class Configuration
 		final int btcShift = getBtcShift();
 
 		if (btcShift == 0)
-			return Constants.BTC_MAX_PRECISION;
+			return Constants.bDGB_MAX_PRECISION;
 		else if (btcShift == 3)
 			return Constants.MBTC_MAX_PRECISION;
 		else

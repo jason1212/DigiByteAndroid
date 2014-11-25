@@ -89,10 +89,10 @@ public class Constants
 	public static final int ADDRESS_FORMAT_GROUP_SIZE = 4;
 	public static final int ADDRESS_FORMAT_LINE_SIZE = 12;
 
-	public static final int BTC_MAX_PRECISION = 8;
+	public static final int bDGB_MAX_PRECISION = 8;
 	public static final int MBTC_MAX_PRECISION = 5;
 
-	public static final int LOCAL_PRECISION = 8;        //altcoins need more digits in BTC
+	public static final int LOCAL_PRECISION = 8;        //altcoins need more digits in bDGB
     //TODO: What about these two things?
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 	public static final String REPORT_EMAIL = "xploited.ca@gmail.com";
