@@ -31,7 +31,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target/idea-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/idea-test-classes" />
     </content>
-    <orderEntry type="jdk" jdkName="Android SDK" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.android:android:4.0.1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
