@@ -2,11 +2,11 @@
 <!-- Need to update this for the coin -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="com.digibyte.wallet"
+	package="de.schildbach.wallet.digibyte"
 	android:installLocation="internalOnly"
 
-	android:versionCode="10022"
-	android:versionName="2.0.0" >
+	android:versionCode="20101"
+	android:versionName="2.1.1" >
 
 
 	<uses-sdk
@@ -60,6 +60,7 @@
 	<application
 		android:name="de.schildbach.wallet.WalletApplication"
 		android:allowBackup="false"
+		android:debuggable="false" 		
 		android:hardwareAccelerated="true"
 		android:icon="@drawable/app_icon"
 		android:label="@string/app_name"
@@ -193,12 +194,12 @@
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="com.digibyte.wallet.address_book"
+			android:authorities="de.schildbach.wallet.digibyte.address_book"
 			android:exported="false" />
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="com.digibyte.wallet.exchange_rates"
+			android:authorities="de.schildbach.wallet.digibyte.exchange_rates"
 			android:exported="false" />
 
 		<receiver

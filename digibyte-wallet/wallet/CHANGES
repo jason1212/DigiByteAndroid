@@ -27,7 +27,7 @@ v1.0.1.5
 * Fixed menu item doubling on rotate in address screen - langerhans (https://github.com/langerhans/dogecoin-wallet-new)
 * replaced block explorer with blockr.io instead of the apparently dead dgc.cryptocoinexplorer.com
 * Added BTER as a backup for getting exchange rates
-* added bmDGB as an exchange rate.
+* added mBTC as an exchange rate.
 * added Disconnect feature back in
 * updated to bitcoin-wallet v3.39
 
@@ -75,7 +75,7 @@ v3.41-v3.43
 
 v3.40
 
-* Support for µDGB denomination, for people who are used to low valued currencies.
+* Support for µBTC denomination, for people who are used to low valued currencies.
 * Always use BIP70 when sending payments directly via Bluetooth.
 * Small bugfixes.
 
@@ -117,7 +117,7 @@ v3.32
 
 v3.31
 
-* Default denomination has changed to millibitcoin (bmDGB).
+* Default denomination has changed to millibitcoin (mBTC).
 * Cross-calculated exchange rates for currencies without Bitcoin volume. Thanks to BitcoinAverage.
 * Better handling of errors when sending coins, specifically when funds are exceeded.
 * Labs: Uses BIP70 payment protocol for tap-to-pay and scan-to-pay, if enabled in the settings.
@@ -153,7 +153,7 @@ v3.26
 
 v3.25
 
-* support for bmDGB denomination
+* support for mBTC denomination
 * also use weighted exchange rates from BitcoinAverage
 * fixed issue with camera autofocus on some Samsung Galaxy devices
 

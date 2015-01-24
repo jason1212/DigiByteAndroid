@@ -946,8 +946,10 @@ public abstract class AbstractBlockChain {
         StoredBlock lastBlockSolved = GetLastBlockForAlgo(storedPrev, algo);
 
         StoredBlock firstBlockSolved = lastBlockSolved;
-
-        for (int i = 0; firstBlockSolved != null && i < CoinDefinition.nAveragingInterval - 1; ++i)
+		
+		
+		if (storedPrev.getHeight() >= CoinDefinition.nMultiAlgoChangeTarget2) {
+		for (int i = 0; firstBlockSolved != null && i < CoinDefinition.nAveragingInterval - 1; ++i)
         {
             firstBlockSolved = firstBlockSolved.getPrev(blockStore);
             firstBlockSolved = GetLastBlockForAlgo(firstBlockSolved, algo);
@@ -959,14 +961,50 @@ public abstract class AbstractBlockChain {
                 verifyDifficulty(proofOfWorkLimit, nextBlock);
             return;
         }
+		long nActualTimespan = lastBlockSolved.getHeader().getTimeSeconds() - firstBlockSolved.getHeader().getTimeSeconds();
+        nActualTimespan = CoinDefinition.nAveragingTargetTimespan + (nActualTimespan - CoinDefinition.nAveragingTargetTimespan) / 6;
 
+        if (nActualTimespan < CoinDefinition.nMinActualTimespanV3)
+            nActualTimespan = CoinDefinition.nMinActualTimespanV3;
+        if (nActualTimespan > CoinDefinition.nMaxActualTimespanV3)
+            nActualTimespan = CoinDefinition.nMaxActualTimespanV3;
+
+        BigInteger newDifficulty = Utils.decodeCompactBits(lastBlockSolved.getHeader().getDifficultyTarget());
+        newDifficulty = newDifficulty.multiply(BigInteger.valueOf(nActualTimespan));
+        newDifficulty = newDifficulty.divide(BigInteger.valueOf(CoinDefinition.nAveragingTargetTimespan));
+
+        if (newDifficulty.compareTo(proofOfWorkLimit) > 0) {
+            log.info("Difficulty hit proof of work limit: {}", newDifficulty.toString(16));
+            newDifficulty = params.getProofOfWorkLimit();
+        }
+
+        int accuracyBytes = (int) (nextBlock.getDifficultyTarget() >>> 24) - 3;
+        BigInteger receivedDifficulty = nextBlock.getDifficultyTargetAsInteger();
+
+        // The calculated difficulty is to a higher precision than received, so reduce here.
+        BigInteger mask = BigInteger.valueOf(0xFFFFFFL).shiftLeft(accuracyBytes * 8);
+        newDifficulty = newDifficulty.and(mask);
+  
+	} else {
+	for (int i = 0; firstBlockSolved != null && i < CoinDefinition.nAveragingInterval - 1; ++i)
+        {
+            firstBlockSolved = firstBlockSolved.getPrev(blockStore);
+            firstBlockSolved = GetLastBlockForAlgo(firstBlockSolved, algo);
+        }
+
+        if(firstBlockSolved == null)  // this could be because checkpoints are being used
+        {
+            if(storedPrev.getHeight() < CoinDefinition.getIntervalCheckpoints())
+                verifyDifficulty(proofOfWorkLimit, nextBlock);
+            return;
+        }
+		
         long nActualTimespan = lastBlockSolved.getHeader().getTimeSeconds() - firstBlockSolved.getHeader().getTimeSeconds();
 
         if (nActualTimespan < CoinDefinition.nMinActualTimespan)
             nActualTimespan = CoinDefinition.nMinActualTimespan;
         if (nActualTimespan > CoinDefinition.nMaxActualTimespan)
             nActualTimespan = CoinDefinition.nMaxActualTimespan;
-
         BigInteger newDifficulty = Utils.decodeCompactBits(lastBlockSolved.getHeader().getDifficultyTarget());
         newDifficulty = newDifficulty.multiply(BigInteger.valueOf(nActualTimespan));
         newDifficulty = newDifficulty.divide(BigInteger.valueOf(CoinDefinition.nAveragingTargetTimespan));
@@ -986,14 +1024,11 @@ public abstract class AbstractBlockChain {
         if (newDifficulty.compareTo(receivedDifficulty) != 0)
             throw new VerificationException("Network provided difficulty bits do not match what was calculated: " +
                     receivedDifficulty.toString(16) + " vs " + newDifficulty.toString(16));
+		}
+		
     }
 
-
-
-
-
-
-
+	
     private void verifyDifficulty(BigInteger calcDiff, Block nextBlock)
     {
         if (calcDiff.compareTo(params.getProofOfWorkLimit()) > 0) {

@@ -359,12 +359,12 @@ public class Utils {
     
     /**
      * <p>
-     * Returns the given value as a plain string denominated in bDGB.   
+     * Returns the given value as a plain string denominated in BTC.   
      * The result is unformatted with no trailing zeroes.
-     * For instance, an input value of BigInteger.valueOf(150000) nanocoin gives an output string of "0.0015" bDGB
+     * For instance, an input value of BigInteger.valueOf(150000) nanocoin gives an output string of "0.0015" BTC
      * </p>
      * 
-     * @param value The value in nanocoins to convert to a string (denominated in bDGB)
+     * @param value The value in nanocoins to convert to a string (denominated in BTC)
      * @throws IllegalArgumentException
      *            If the input value is null
      */

@@ -19,7 +19,7 @@ public class CoinDefinition {
     public static final String coinTicker = "DGB";
     public static final String coinURIScheme = "digibyte";
     public static final String cryptsyMarketId = "139";
-    public static final String cryptsyMarketCurrency = "bDGB";
+    public static final String cryptsyMarketCurrency = "BTC";
     public static final String PATTERN_PRIVATE_KEY_START = "6";
 
     public enum CoinPrecision {
@@ -66,6 +66,8 @@ public class CoinDefinition {
 
 	//Block multiAlgo
 	public static final int nMultiAlgoChangeTarget = 145000; // Patch effective @ block 67200
+	
+	public static final int nMultiAlgoChangeTarget2 = 400000; // Patch effective @ block 67200
 
 	 //Duration of blocks between reward deductions
 	 public static final int patchBlockRewardDuration = 10080; // 10080 blocks main net change
@@ -75,9 +77,16 @@ public class CoinDefinition {
 
     static final long nMaxAdjustDown = 40; // 4% adjustment down
     static final long nMaxAdjustUp = 20; // 2% adjustment up
+	
+	static final long nMaxAdjustDownV3 = 16; // 4% adjustment down
+    static final long nMaxAdjustUpV3 = 8; // 2% adjustment up
+	static final long nLocalDifficultyAdjustment = 4; // 4% down, 16% up
 
     static final long nMinActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustUp) / 100;
     static final long nMaxActualTimespan = nAveragingTargetTimespan * (100 + nMaxAdjustDown) / 100;
+	
+	static final long nMinActualTimespanV3 = nAveragingTargetTimespan * (100 - nMaxAdjustUpV3) / 100;
+    static final long nMaxActualTimespanV3 = nAveragingTargetTimespan * (100 + nMaxAdjustDownV3) / 100;
 
     public static final int getInterval(int height, boolean testNet) {
             return INTERVAL;      //108
@@ -146,6 +155,7 @@ public class CoinDefinition {
 					"seed1.digibyte.co", 
 					"seed2.hashdragon.com",
 					"dgb.cryptoservices.net"
+
 					
     };
 
