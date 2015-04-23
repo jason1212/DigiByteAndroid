@@ -152,11 +152,10 @@ public class CoinDefinition {
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-					"seed1.digibyte.co", 
-					"seed2.hashdragon.com",
-					"dgb.cryptoservices.net"
-
-					
+					"seed1.digibytewiki.com", 
+					"seed2.digiexplorer.info",
+					"seed3.digihash.co",
+					"seed4.digibyte.co"					
     };
 
     public static int minBroadcastConnections = 1;   //0 for default; we need more peers.
