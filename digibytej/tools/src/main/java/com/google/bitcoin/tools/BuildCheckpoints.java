@@ -41,7 +41,7 @@ public class BuildCheckpoints {
         final BlockChain chain = new BlockChain(PARAMS, store);
         final PeerGroup peerGroup = new PeerGroup(PARAMS, chain);
 		peerGroup.addAddress(InetAddress.getLocalHost());
-		peerGroup.addAddress(InetAddress.getByName("69.164.198.161"));
+		//peerGroup.addAddress(InetAddress.getByName("69.164.198.161"));
         long now = new Date().getTime() / 1000;
         peerGroup.setFastCatchupTimeSecs(now);
 
