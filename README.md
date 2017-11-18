@@ -6,7 +6,7 @@ digibytej - This is the base Java Library for Digibyte.
 digibyte-wallet - This is the Android App
 This app was forked originally from the Bitcoin Wallet App. 
 
-##Build Instructions
+## Build Instructions
 
 Install Android Studio
 https://developer.android.com/studio/index.html
@@ -19,14 +19,14 @@ Install Maven
 brew install maven
 '''
 
-##Checklist
+## Checklist
 Android sdk and the correct api version installed
 Java jdk
 Apache maven 3.10?
 Clone the digiandroid repo
 CD into digibytej
 '''
-mvn clean install -DskipTests'
+mvn clean install -DskipTests
 '''
 Cd checkpoints  dir
 '''
