@@ -15,9 +15,9 @@ Install Java SDK
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 Install Maven
-'''
+```sh
 brew install maven
-'''
+```
 
 ## Checklist
 Android sdk and the correct api version installed
@@ -25,13 +25,13 @@ Java jdk
 Apache maven 3.10?
 Clone the digiandroid repo
 CD into digibytej
-'''
+```sh
 mvn clean install -DskipTests
-'''
+```
 Cd checkpoints  dir
-'''
+```sh
 mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
-'''
+```
 
 
 
