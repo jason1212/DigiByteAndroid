@@ -71,6 +71,11 @@ Build Wallet
 mvn clean install -DskipTests 
 ```
 
+Build Release Wallet
+```sh
+mvn clean install -Prelease -DskipTests
+```
+
 
 ## Checklist
 Android sdk and the correct api version installed
