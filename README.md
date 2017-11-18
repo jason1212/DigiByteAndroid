@@ -39,13 +39,17 @@ Navigate to Checkpoints File
 ```sh
 cd tools
 ```
+Start Up Your Local digibyted core wallet For incoming peer connections
 
 Compile Updated Checkpoints File
 ```sh
 mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
 ```
-
 Copy Checkpoints File to Correct Place
+
+Move checkpoints file located here https://github.com/digibyte/digiandroid/tree/master/digibytej/tools
+
+and replace checkpoints file located here: https://github.com/digibyte/digiandroid/tree/master/digibyte-wallet/wallet/assets
 
 Navigate back to digibyte-wallet directory
 ```sh
