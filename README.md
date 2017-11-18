@@ -11,6 +11,7 @@ digibyte-wallet - This is the Android App
 
 Install Android Studio
 https://developer.android.com/studio/index.html
+Install Android SDK 26 (v8 Oreo)
 
 Install Java JDK
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
@@ -18,6 +19,14 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 Install Maven
 ```sh
 brew install maven
+```
+
+Switch to Maven 3.1 to Make Build Work
+```sh
+brew install homebrew/versions/maven31
+brew link --overwrite maven@3.1
+sudo ln -s /usr/local/Cellar/maven31/3.1.1 /usr/local/Cellar/maven/
+brew switch maven 3.1.1
 ```
 
 Clone DigiAndroid
@@ -68,7 +77,7 @@ Android sdk and the correct api version installed
 
 Java JDK
 
-Apache maven 3.10?
+Apache Maven 3.10
 
 Clone the digiandroid repo
 
