@@ -19,6 +19,21 @@ Install Maven
 brew install maven
 ```
 
+Clone DigiAndroid
+```sh
+git clone https://github.com/digibyte/digiandroid.git
+```
+
+Navigate to DigiBytej Folder
+```sh
+cd digibytej
+```
+
+Make Wallet
+```sh
+mvn clean install -DskipTests
+```
+
 ## Checklist
 Android sdk and the correct api version installed
 
