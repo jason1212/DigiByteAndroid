@@ -3,8 +3,9 @@
 This project is stored in two folders.
 
 digibytej - This is the base Java Library for Digibyte.
+
 digibyte-wallet - This is the Android App
-This app was forked originally from the Bitcoin Wallet App. 
+
 
 ## OSX Build Instructions
 
@@ -29,10 +30,34 @@ Navigate to DigiBytej Folder
 cd digibytej
 ```
 
-Make Wallet
+Make Build
 ```sh
 mvn clean install -DskipTests
 ```
+
+Navigate to Checkpoints File
+```sh
+cd tools
+```
+
+Compile Updated Checkpoints File
+```sh
+mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
+```
+
+Copy Checkpoints File to Correct Place
+
+Navigate back to digibyte-wallet directory
+```sh
+cd ../../
+cd dgibyte-wallet
+```
+
+Build Wallet
+```sh
+mvn clean install -DskipTests 
+```
+
 
 ## Checklist
 Android sdk and the correct api version installed
