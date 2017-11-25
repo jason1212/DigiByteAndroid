@@ -33,10 +33,7 @@ import android.widget.TextView;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.GenericUtils;
 import de.schildbach.wallet.util.WalletUtils;
-
-
 import de.schildbach.wallet.digibyte.R;
-
 
 /**
  * @author Andreas Schildbach
@@ -120,7 +117,7 @@ public final class CurrencyTextView extends TextView
 	{
 		super.onFinishInflate();
 
-		setPrefixColor(getResources().getColor(R.color.digibyte_dark_blue));
+		setPrefixColor(getResources().getColor(R.color.fg_less_significant));
 		setInsignificantRelativeSize(0.85f);
 		setSingleLine();
 	}

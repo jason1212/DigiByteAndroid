@@ -1,5 +1,5 @@
-Welcome to DigiByte Wallet_, a standalone DigiByte payment app for your Android device!
-DigiByte
+Welcome to _Digibyte Wallet_, a standalone Digibyte payment app for your Android device!
+
 This project contains several sub-projects:
 
  * __wallet__:

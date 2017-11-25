@@ -31,7 +31,6 @@ import android.widget.ImageView;
 import de.schildbach.wallet.digibyte.R;
 
 
-
 /**
  * @author Andreas Schildbach
  */

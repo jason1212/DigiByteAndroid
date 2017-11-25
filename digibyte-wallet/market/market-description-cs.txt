@@ -1,19 +1,19 @@
-Tato aplikace je peněženka s DigiBytey pro systém Android. Můžete posílat DigiBytey mezi telefony prostým naskenováním QR kódu, který je zobrazen aplikací, nebo pomocí NFC (Near Field Communication).
+Tato aplikace je peněženka s Digibytey pro systém Android. Můžete posílat Digibytey mezi telefony prostým naskenováním QR kódu, který je zobrazen aplikací, nebo pomocí NFC (Near Field Communication).
 
 VLASTNOSTI:
 
-• Zobrazení zůstatku peněženky v DigiByteech a několika jiných měnách.
-• Odesílání a přijímání DigiByteů pomocí NFC, QR-kódů, nebo DigiByte adres.
+• Zobrazení zůstatku peněženky v Digibyteech a několika jiných měnách.
+• Odesílání a přijímání Digibyteů pomocí NFC, QR-kódů, nebo Digibyte adres.
 • Adresář pro často používané adresy.
 • Možnost zadávání transakcí v offline režimu, k jejich zpracování dojde po připojení.
-• Oznamování v liště při synchronizaci a při přijetí DigiByteů.
+• Oznamování v liště při synchronizaci a při přijetí Digibyteů.
 • Widget s celkovým zůstatkem.
 
-Více informací o DigiByteech
-http://digibyte.co
+Více informací o Digibyteech
+http://dgbiad.theblockexplorer.com
 
-Pokud chcete přispět do projektu DigiByte Wallet, naleznete jej na adrese
-https://github.com/DigiByte/DigiByteAndroid
+Pokud chcete přispět do projektu Digibyte Wallet, naleznete jej na adrese
+https://github.com/HashEngineering/digibyte-wallet
 
 License: GPLv3
 Použití pouze na vlastní riziko!

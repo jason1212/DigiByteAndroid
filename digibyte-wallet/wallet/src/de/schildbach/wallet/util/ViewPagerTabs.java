@@ -32,7 +32,6 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.view.View;
 
-
 import de.schildbach.wallet.digibyte.R;
 
 
@@ -56,9 +55,9 @@ public class ViewPagerTabs extends View implements OnPageChangeListener
 		setSaveEnabled(true);
 
 		paint.setTextSize(getResources().getDimension(R.dimen.font_size_tiny));
-		paint.setColor(Color.WHITE);
+		paint.setColor(Color.BLACK);
 		paint.setAntiAlias(true);
-		paint.setShadowLayer(2, 0, 0, Color.BLACK);
+		paint.setShadowLayer(2, 0, 0, Color.WHITE);
 	}
 
 	public void addTabLabels(final int... labelResId)
@@ -72,8 +71,6 @@ public class ViewPagerTabs extends View implements OnPageChangeListener
 			final String label = context.getString(resId);
 
 			final int width = (int) paint.measureText(label);
-			
-			
 
 			if (width > maxWidth)
 				maxWidth = width;
@@ -113,7 +110,7 @@ public class ViewPagerTabs extends View implements OnPageChangeListener
 			final String label = labels.get(i);
 
 			paint.setTypeface(i == pagePosition ? Typeface.DEFAULT_BOLD : Typeface.DEFAULT);
-			paint.setColor(i == pagePosition ? Color.WHITE : Color.WHITE);
+			paint.setColor(i == pagePosition ? Color.BLACK : Color.DKGRAY);
 
 			final float x = viewHalfWidth + (maxWidth + spacing) * (i - pageOffset);
 			final float labelWidth = paint.measureText(label);

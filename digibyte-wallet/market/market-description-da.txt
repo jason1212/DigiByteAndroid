@@ -1,0 +1,22 @@
+Hav altid dine Digibytes med dig i din lomme! Du betaler ved hurtigt at scanne en QR-kode. Som handlende kan du modtage betalinger pålideligt og øjeblikkeligt. Digibyte Wallet er den første mobile Digibyte-app, og muligvis også den mest sikre!
+
+FUNKTIONER:
+
+• Ingen registrering, webservice eller sky behøves! Tegnebogen er decentraliseret og peer-to-peer.
+• Visning af Digibyte-beløb i DGB, mDGB og µDGB.
+• Konvertering til og fra lokale valutaer.
+• Afsendelse og modtagelse af Digibyte via NFC, QR-koder eller Digibyte-URLer.
+• Adressebog til ofte brugte Digibyte-adresser.
+• Når du er offline, kan du stadig betale via Bluetooth.
+• Systemnotifikation for modtagne mønter.
+• App-widget for Digibyte-saldo.
+
+Du kan finde mere om Digibyte på
+http://dgbiad.theblockexplorer.com
+
+Hvis du vil bidrage til Digibyte Wallet, kan projektet findes på
+https://github.com/HashEngineering/digibyte-wallet
+
+Licens: GPLv3
+Brug for egen risiko!
+http://www.gnu.org/licenses/gpl-3.0.en.html
